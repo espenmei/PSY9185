@@ -82,3 +82,5 @@ library(lme4)
 # 6.1 - Include senroll as a covariate for the random school intercepts. Interpret the results
 # It is better to first rescale the variables a bit so that it doesn't take very large numbers (and therefore small coefficients)
 Achieve$senroll_s = Achieve$senroll / 100
+
+# 6.2 - Include senroll as a covariate for the random school intercepts and slopes. Interpret the results
