@@ -14,7 +14,7 @@ xc1 = read.csv("https://raw.githubusercontent.com/espenmei/PSY9185/main/datasets
 # Exercises 2
 # -------------------------------------------------------
 library(lme4)
-# 2.1 - Fit a model for educational attainment with fixed a intercept and random intercepts for both primary and secondary school
+# 2.1 - Fit a model for educational attainment with a fixed intercept and random intercepts for both primary and secondary school
 
 # 2.2 - Does primary or secondary school appear to be most important for attainment?
 
