@@ -2,6 +2,10 @@
 # -------------------------------------------------------
 # Read the data and store it in a dataframe called xc1
 xc1 = read.csv("https://raw.githubusercontent.com/espenmei/PSY9185/main/datasets/xc1.dat")
+# The data comes from the MLwiN program and consist of test scores from students at age 16. Each row represents a student
+# attain - educational attainment score
+# pid - primary school identifier
+# sid - secondary school identifier
 
 # 1.1 - How many students, primary schools and secondary schools are in the data? (hint: unique(), length())
 
