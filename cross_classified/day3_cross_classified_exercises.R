@@ -23,7 +23,6 @@ library(lme4)
 # 2.2 - Extend the model to have random intercepts for both primary and secondary school
 # Interpret the parameters of the model
 # Does primary or secondary school appear to be most important for attainment?
-# Did the variance due to secondary school effects change from the previous model? If so, why could that be?
 
 # Exercises 3
 # -------------------------------------------------------
