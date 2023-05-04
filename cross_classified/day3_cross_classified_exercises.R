@@ -7,9 +7,9 @@ xc1 = read.csv("https://raw.githubusercontent.com/espenmei/PSY9185/main/datasets
 # pid - primary school identifier (age 5 - 12)
 # sid - secondary school identifier (age 12 - 16)
 
-# 1.1 - How many students, primary schools and secondary schools are in the data? (hint: unique(), length())
+# 1.1 - How many students, primary schools and secondary schools are in the data? (hint: `length(unique(xc1$pid))`)
 
-# 1.2 - Cross-tabulate the grouping factors primary and secondary school. What does the table show us? (hint: `table(F1, F2)`)
+# 1.2 - Cross-tabulate the grouping factors primary and secondary school. What does the table show us? (hint: `xtabs(~pid + sid, xc1)`)
 
 # 1.3 - Can we determine from the table if primary and secondary school are partially or fully crossed?
 
