@@ -69,15 +69,15 @@ text(sort(re_rater), labels = order(re_rater), cex = 1.0, pos = 2, col = "red")
 # Model 4 - explaining the rater effects
 # We might try to explain why different raters rate different by modeling how useful they found this exercise.
 table(jdat$useful, useNA = "ifany")
-# There are some missing values here, so we want to refit model 3 to the non-missing observations.
-# Then we have a model to compare against
+# Then we include dummy variables for the categories
 jdat_use = filter(jdat, !is.na(useful))
 m4 = lmer(Joke~1+useful+(1|joke_id)+(1|rater_id), jdat_use, REML = F)
 summary(m4)
-# Then we include dummy variables for the categories
+# There are some missing values here, so we want to refit model 3 to the non-missing observations.
+# Then we have a model to compare against
 m5 = lmer(Joke~1+(1|joke_id)+(1|rater_id), jdat_use, REML = F)
 summary(m5)
 # Then we compare the models to get a joint test of all the coefficients being 0.
-anova(m5, m4)
+anova(m4, m5)
 # This is not significant
 # Note that we fitted the models with REML = F, which we need to compare models with different fixed effects. 
